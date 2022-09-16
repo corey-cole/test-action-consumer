@@ -19,5 +19,5 @@ jobs:
     needs:
       - init
     uses: corey-cole/experimental-action-workflows/.github/workflows/env-sink-actions.yml@main
-    with:
-      var-file: sink-env
+    # with:
+    #   var-file: sink-env
