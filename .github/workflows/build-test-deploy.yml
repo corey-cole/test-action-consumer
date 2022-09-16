@@ -1,0 +1,9 @@
+name: Build, Test, and Deploy
+on:
+  - push
+
+jobs:
+  call-sink:
+    uses: corey-cole/experimental-action-workflows/.github/workflows/env-sink-actions.yml@main
+    with:
+      var-file: dummy
