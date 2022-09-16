@@ -9,11 +9,11 @@ jobs:
       - name: Create envfile
         run: |
           echo "TF_VAR_git_repo=${{ github.repositoryUrl }}" > sink.env
-      - name: Stash envfile
-        uses: actions/upload-artifact@v3
-        with:
-          name: sink-env
-          path: sink.env
+      # - name: Stash envfile
+      #   uses: actions/upload-artifact@v3
+      #   with:
+      #     name: sink-env
+      #     path: sink.env
 
   call-sink:
     needs:
